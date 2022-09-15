@@ -1,0 +1,22 @@
+Sort the customer IDs in order to find the customer who authored the most reviews. Which customers are the top 3 reviewers (with the most reviews)?
+
+Both the commonds cut and awk below outputs the same result.
+$ cut -f 2 amazon_reviews_us_Books_v1_02.tsv |sort| uniq -c|sort -r| head -3
+OR
+$ awk -F" " '{print $2}' amazon_reviews_us_Books_v1_02.tsv |sort | uniq -c|sort |  tail -3
+>>2664 52615377
+  9964 50732546
+  21922 50122160
+So the customers whose id is '50122160' authored 21922 reviews and the most reviews.  And customer whose customer id is '50732546' authored 9964 reviews, and customer id '52615377' authored 2264 revies.
+
+
+Sort the products in order to find the product that has the most reviews. What are the top 3 most reviewed products?
+$ cut -f 4 amazon_reviews_us_Books_v1_02.tsv |sort| uniq -c|sort -r| head -3
+OR
+$ awk -F" " '{print $4}' amazon_reviews_us_Books_v1_02.tsv |sort | uniq -c|sort |  tail -3
+>>2666 0525947647
+   3739 0439139597
+   4625 043935806X
+So the products whose id is '043935806X' has the most reviews which is 4625 reviews. And '0439139597' has 3739 reviews, '0525947647' has 2666 reviews.
+
+
