@@ -1,0 +1,895 @@
+    1  passwd
+    2  wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+    3  history > cmds.log
+    4  history
+    5  cmds.log
+    6  cd ~/Desktop
+    7  ls
+    8  mkdir ws1
+    9  ls
+   10  cd ws1
+   11  git init
+   12  cd
+   13  ls
+   14  sudo dnf install git-all
+   15  cd ws1
+   16  ls
+   17  history
+   18  ls
+   19  cd
+   20  ls
+   21  mv cmds.log ~/ws1/cmds.log
+   22  ls
+   23  cd ws1
+   24  ls
+   25  git status
+   26  touch cmds.log
+   27  ls
+   28  git status
+   29  git add cmds.log
+   30  git status
+   31  git commit -m "This is my first commit"
+   32  git config --global user.email "shota.jpn.12@gmail.com"
+   33  git commit -m "This is my first commit"
+   34  cd
+   35  ls
+   36  wget www.github.com
+   37  cd ws1
+   38  git remote add origin https://github.com/ShotaDT/ws1.git
+   39  git branch -M main
+   40  git -u origin main
+   41  git add cmds.log
+   42  git status
+   43  git commit -m "This is my first commit"
+   44  git config --global user.name "ShotaDT"
+   45  git@github.com:ShotaDT/ws1.git
+   46  git remote add origin git@github.com:ShotaDT/ws1.git
+   47  touch cmds.log
+   48  git status
+   49  git add cmds.log
+   50  git push -u origin master
+   51  cd
+   52  git clone https://github.com/ShotaDT/ws1.git
+   53  cd ws1
+   54  ls
+   55  mv ~/cmds.log ~/
+   56  mv ~/cmds.log ~/shota
+   57  mv ~/cmds.log ~/shota/cmds.log
+   58  mv ~/shota/ws1/cmds.log ~/shota/cmds.log
+   59  ls
+   60  cd
+   61  ls
+   62  mv ~/shota/ws1/cmds.log ~/shota/cmds.log
+   63  mv ~/ws1/cmds.log ~/shota/cmds.log
+   64  mv ~/ws1/cmds.log ~/cmds.log
+   65  ls
+   66  rm ws1
+   67  rmdir ws1
+   68  rm -r ws1
+   69  rm -rf ws1
+   70  ls
+   71  git clone https://github.com/ShotaDT/ws1.repo
+   72  ls
+   73  history
+   74  ls
+   75  git clone git@github.com:ShotaDT/ws1.git
+   76  ls
+   77  echo "# ws1" >> README.md
+   78  git init
+   79  git add README.md
+   80  git commit -m "first commit"
+   81  git branch -M main
+   82  git remote add origin git@github.com:ShotaDT/ws1.git
+   83  git push -u origin main
+   84  ls
+   85  rm README.md
+   86  ls
+   87  rm index.html
+   88  ls
+   89  git remote add origin git@github.com:ShotaDT/ws1.git
+   90  mkdir ws1
+   91  ls
+   92  cd ws1
+   93  git init
+   94  git add README.md
+   95  git commit -m "first commit"
+   96  cp ~/cmds.log ~/ws1
+   97  ls
+   98  git add cmds.log
+   99  git commit -m "first commit"
+  100  git branch -M main
+  101  git remote add origin git@github.com:ShotaDT/ws1.git
+  102  git push -u origin main
+  103  cd
+  104  git clone https://github.com/ShotaDT/ws1.git
+  105  ls
+  106  rm -rf ws1
+  107  ls
+  108  git clone https://github.com/ShotaDT/ws1.git
+  109  ls
+  110  cd ws1
+  111  git init
+  112  cp ~/cmds.log ~/ws1
+  113  git add
+  114  git add cmds.log
+  115  git status
+  116  git commit -m "first commit. cmds.log"
+  117  git push -u origin main
+  118  cd
+  119  ls
+  120  history
+  121  history > cmds.log
+  122  ls
+  123  cd cmds.log
+  124  cd ws1
+  125  ls
+  126  cp ~/cmds.log ~/ws1/cmds2.log
+  127  ls
+  128  git add cmds2.log
+  129  git status
+  130  git commit -m "second commit. cmds2.log"
+  131  git push -u origin main
+  132  exit
+  133  ls
+  134  pwd
+  135  exit
+  136  ls
+  137  unzip amazon_reviews_us_Books_v1_02.tsv.gz
+  138  ls
+  139  tar -xvf amazon_reviews_us_Books_v1_02.tsv.gz
+  140  gzip amazon_reviews_us_Books_v1_02.tsv.gz
+  141  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
+  142  ls
+  143  grep verified amazon_reviews_us_Books_v1_02.tsv
+  144  grep unverified amazon_reviews_us_Books_v1_02.tsv
+  145  grep -l verified amazon_reviews_us_Books_v1_02.tsv.gz
+  146  grep -l verified amazon_reviews_us_Books_v1_02.tsv
+  147  grep verified amazon_reviews_us_Books_v1_02.tsv | wc
+  148  grep unverified amazon_reviews_us_Books_v1_02.tsv | wc
+  149  grep unverified amazon_reviews_us_Books_v1_02.tsv | wc >> counts.txt
+  150  ls
+  151  grep verified amazon_reviews_us_Books_v1_02.tsv | wc
+  152  grep verified amazon_reviews_us_Books_v1_02.tsv | wc >> counts.txt
+  153  vi counts.txt
+  154  cat counts.txt
+  155  history > cmds.log
+  156  ls
+  157  cat cmds.log
+  158  mkdir ws2
+  159  ls
+  160  mv cmds.log ws2
+  161  ls
+  162  mv counts.txt ws2
+  163  ls
+  164  cd ws2
+  165  ls
+  166  git remote add origin git@github.com:ShotaDT/ws2.git
+  167  git push -u origin main
+  168  git add counts.txt
+  169  git add chmd.log
+  170  git add cmds.log
+  171  git status
+  172  git commit -m "ws2 files"
+  173  git push -u origin main
+  174  git init
+  175  ls
+  176  git clone https://github.com/ShotaDT/ws1.git
+  177  ls
+  178  mv cmds.log shota
+  179  mv counts.txt
+  180  mv counts.txt shota
+  181  cd ..
+  182  ls
+  183  cd shota
+  184  cd ws2
+  185  ls
+  186  cd shota
+  187  cat shota
+  188  cd..
+  189  cd ..
+  190  ls
+  191  rm -rf ws1
+  192  rm -rf ws2
+  193  ls
+  194  hitstory > cmds.log
+  195  history > cmds.log
+  196  ls
+  197  cat cmds.log
+  198  grep verified amazon_reviews_us_Books_v1_02.tsv | wc >> counts.txt
+  199  grep unverified amazon_reviews_us_Books_v1_02.tsv | wc >> counts.txt
+  200  ls
+  201  vi counts.txt
+  202  cat counts.txt
+  203  grep unverified amazon_reviews_us_Books_v1_02.tsv
+  204  grep unverified amazon_reviews_us_Books_v1_02.tsv | wc
+  205  ls
+  206  cat counts.txt
+  207  echo "# ws2" >> cmds.log
+  208  ls
+  209  mkdir ws2
+  210  ls
+  211  cd ws2
+  212  ls
+  213  git init
+  214  git commit - "first commit"
+  215  git commit -m "first commit"
+  216  cp cmds.log ws2
+  217  pwd
+  218  cp ~/shota/cmds.log ws2
+  219  cd
+  220  cp cmds.log ws2
+  221  ls
+  222  cp counts.txt ws2
+  223  cd ws2
+  224  ls
+  225  git add counts.txt cmds.log
+  226  git status
+  227  git commit -m "commit cmds.log and couts.txt"
+  228  git branch -M main
+  229  git git remote add origin git@github.com:ShotaDT/ws2.git
+  230  git remote add origin git@github.com:ShotaDT/ws2.git
+  231  git push -u origin main
+  232  ls
+  233  cp mads.log shota
+  234  pwd
+  235  cd home
+  236  cd shota
+  237  cd..
+  238  cd ..
+  239  ls
+  240  pwd
+  241  rm -rf ws2
+  242  git clone git@github.com:ShotaDT/ws2.git
+  243  git clone git@github.com:ShotaDT/ws2.git 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
+  244  git clone -b ws2 https://github.com/ShotaDT/CS131.git CS131_ws2_shotaDT
+  245  git clone -b ws2 https://github.com/ShotaDT/CS131.git
+  246  git clone -b ws2 git@github.com:ShotaDT/ws2.git
+  247  echo "# ws2" >> README.md
+  248  git init
+  249  git add README.md
+  250  git commit -m "first commit"
+  251  git branch -M main
+  252  git remote add origin git@github.com:ShotaDT/ws2.git
+  253  ls
+  254  git clone -b ws2 git@github.com:ShotaDT/ws2.git CS131_ws2_ShotaDT
+  255  git clone -b ws2 git@github.com:ShotaDT/ws2.git CS131_ws2_ShotaDT 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
+  256  git remote set-url origin https://github.com/CS131/ws2.git
+  257  ls
+  258  git clone -b ws2 git@github.com:ShotaDT/ws2.git CS131_ws2_ShotaDT
+  259  ssh-keygen -t rsa -C "your_email@youremail.com"
+  260  git config
+  261  git config ws2
+  262  git config home
+  263  git remote set-url origin https://github.com/ShotaDT/ws2.git
+  264  ls
+  265  git clone -b ws2 git@github.com:ShotaDT/ws2.git CS131_ws2_ShotaDT
+  266  git clone -b ws2 git@github.com:ShotaDT/ws2.git
+  267  git clone -b ws2 https://github.com/ShotaDT/ws2.git
+  268  git clone -b origin https://github.com/ShotaDT/ws2.git
+  269  git clone -b main https://github.com/ShotaDT/ws2.git
+  270  git clone -b ws2 git@github.com:ShotaDT/ws2.git CS131_ws2_ShotaDT
+  271  git clone git@github.com:ShotaDT/ws2.git
+  272  ls
+  273  mkdir ws2
+  274  cd ws2
+  275  git remote add origin git@github.com:ShotaDT/ws2.git
+  276  touch 1.txt
+  277  ls
+  278  git add 1.txt
+  279  git status
+  280  git init
+  281  git add 1.txt
+  282  git status
+  283  git commit -m "first commit"
+  284  git push -u origin main
+  285  git push -u
+  286  git push -u origin main
+  287  git push
+  288  git remote add origin git@github.com:ShotaDT/ws2.git
+  289  git status
+  290  git push -u origin main
+  291  git add 1.txt
+  292  git status
+  293  cd
+  294  cp cmds.log ws2
+  295  cd ws2
+  296  ls
+  297  git add cmds.log
+  298  git status
+  299  git commit -m "cmds.log"
+  300  git branch -M main
+  301  git push -u origin main
+  302  git commit
+  303  git status
+  304  ls
+  305  git push -u origin main
+  306  git config --global user.name "ShotaDT"
+  307  git add 1.txt
+  308  git status
+  309  vi 1.txt
+  310  git add 1.txt
+  311  git status
+  312  git commit -m "test"
+  313  git push -u origin main
+  314  cd
+  315  rm -rv ws2
+  316  y
+  317  ls
+  318  git clone -b ws2 git@github.com:ShotaDT/ws2.git
+  319  mkdir ws2
+  320  cp cmds.log counts.txt wst
+  321  cp cmds.log counts.txt ws2
+  322  cd ws2
+  323  git add cmds.log counts.txt
+  324  git status
+  325  git commit -m "history and coutns"
+  326  git push -u origin main
+  327  git clone -b ws2 git@github.com:ShotaDT/ws2.git
+  328  git push -u origin main
+  329  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
+  361  ls
+  362  git add counts.txt
+  363  git status
+  364  git commit -m "shota"
+  365  cat cmds.log
+  366  git config --global user.email "shota.jpn.12@gmail.com"
+  367  git remote add origin git@github.com:ShotaDT/ws2.git
+  368  git push -u origin master
+  369  git status
+  370  git commit -m "final"
+  371  git add cmds.log counts.txt
+  372  git push -u origin master
+  373  git commit -m "initial commit"
+  374  git add cmds.log counts.txt
+  375  git status
+  376  git commit -m "initial commit"
+  377  git push -u origin main
+  378  ssh -T git@github.com
+  379  git remote add origin git@github.com:ShotaDT/ws2.git
+  380  git remote set-url origin git@github.com:ShotaDT/ws2.git
+  381  git push -u origin master
+  382  git push -u origin main
+  383  git status
+  384  git add cmds.log
+  385  git add counts.txt
+  386  git status
+  387  ls
+  388  git commit -m 
+  389  git commit -m "first"
+  390  git pull origin master
+  391  git push -u origin main
+  392  git init
+  393  ls
+  394  git status
+  395  ls
+  396  git add cmds.log
+  397  git add counts.txt
+  398  git status
+  399  git commit -m "from ssh" 
+  400  git push -u origin main
+  401  git remote git@github.com:ShotaDT/ws2.git
+  402  git@github.com:ShotaDT/ws2.git
+  403  git remote git@github.com:ShotaDT/ws2.git
+  404  git remote set-url origin git@github.com:ShotaDT/ws2.git
+  405  git remote set-url origin main git@github.com:ShotaDT/ws2.git
+  406  git remote set-url git@github.com:ShotaDT/ws2.git
+  407  git remote set-url origin git@github.com:ShotaDT/ws2.git
+  408  git clone git@github.com:ShotaDT/ws2.git
+  409  git remote -v
+  410  git remote set-url origin git@github.com:ShotaDT/ws2.git
+  411  ssh -T git@github.com
+  412  git remote add origin git@github.com:ShotaDT/ws2.git
+  413  git remote -v
+  414  git clone git@github.com:ShotaDT/ws2.git
+  415  ssh -T git@github.com
+  416  git remote set-url origin https://github.com/ShotaDT/ws2.git
+  417  git status
+  418  ls
+  419  git init
+  420  git add couts.txt
+  421  git add counts.txt
+  422  git add cmds.log
+  423  git status
+  424  git commit -m "wtf" 
+  425  git remote -v
+  426  ls
+  427  git push -u origin main
+  428  git init
+  429  git status
+  430  git add counts.txt
+  431  git status
+  432  cd..
+  433  cd ..
+  434  ls
+  435  rm -rf ws2
+  436  ls
+  437  mkdir ws2
+  438  cp cmds.log couts.txt ws2
+  439  cp cmds.log counts.txt ws2
+  440  ls
+  441  cd ws2
+  442  ls
+  443  git remote set-url origin https://github.com/ShotaDT/ws2.git
+  444  git remote -v
+  445  git status
+  446  git init
+  447  git status
+  448  git add cmds.log
+  449  git add counts.txt
+  450  git status
+  451  git commit -m "first commit"
+  452  git push -u origin main
+  453  git pull origin main
+  454  git pull origin
+  455  cd
+  456  ls
+  457  rm -rf ws2
+  458  ls
+  459  mkdir ws2
+  460  cd ws2
+  461  git init
+  462  ls
+  463  git remote set-url origin https://github.com/ShotaDT/ws2.git
+  464  git remote add origin https://github.com/ShotaDT/ws2.git
+  465  git remote -v
+  466  git pull origin
+  467  ls
+  468  git pull origin main
+  469  ls
+  470  rm cmds2.log
+  471  ls
+  472  git push origin main
+  473  git status
+  474  git rm cmds2.log
+  475  git status
+  476  git commit -m "removing file"
+  477  git push -u origin main
+  478  git status
+  479  git push origin main
+  480  git push -f origin main
+  481  git push -u origin master
+  482  ls
+  483  cd ..
+  484  ls
+  485  cp cmds.log counts.txt ws2
+  486  cd ws2
+  487  ls
+  488  git add cmds.log counts.txt
+  489  git status
+  490  git commit -m "adding cmds.log and counts.txt"
+  491  git push -u origin master
+  492  exit
+  493  cd A1
+  494  ls
+  495  head -5 hashtag.csv
+  496  grep hashtag hashtag.csv
+  497  awk -F ',' '{print $4}' hashtag.csv | tail -n +2 | sort -u | wc -l
+  498  awk -F ',' '{print $2}' hashtag.csv | tail -n                  
+  499  awk -F ',' '{print $4}' hashtag.csv | tail -n +2 | sort -u | wc -l| |
+  500  man tail
+  501  awk -F ',' '{print $1}' hashtag.csv | tail -n +2 | sort -u | wc -l
+  502  tail -n +2 a1.txt
+  503  head -n +2 a1.txt
+  504  head 2 a1.txt
+  505  head -1 a1.txt
+  506  tail -1 a1.txt
+  507  tail +1 aq.txt
+  508  awk -F ',' '{print $1}' hashtag.csv | tail -n +2 | sort -u | wc -l
+  509  awk -F ',' '{print $4}' hashtag.csv | tail -n +2 | sort -u | wc -l
+  510  awk -F ',' '{print $2}' hashtag.csv | tail -n +2 | sort -u | wc -l
+  511  awk -F ',' '{print $2}' hashtag.csv | tail -n +2 | sort | uniq |  wc -l
+  512  awk -F ',' '{print $1}' hashtag.csv | tail -n +2 | sort | uniq |  wc -l
+  513  awk -F ',' '{print $4}' hashtag.csv | tail -n +2 | sort | uniq |  wc -l
+  514  exit
+  515  ls
+  516  mkdir A1
+  517  cd A1
+  518  touch a1.txt
+  519  ls
+  520  vi a1.txt
+  521  pwd
+  522  vi a1.txt
+  523  echo $home
+  524  echo $HOME
+  525  vi a1.txt
+  526  printenv
+  527  id
+  528  chmod man
+  529  man chmod
+  530  id -u {shota}
+  531  id -u shota
+  532  groups
+  533  groups shota
+  534  groups root
+  535  whoami
+  536  pwd
+  537  echo 'pwd'
+  538  echo "pwd"
+  539  printenv
+  540  man chmod
+  541  ls -l
+  542  man chmod
+  543  mkdir temp
+  544  ls
+  545  ls -l
+  546  chmod 666 temp/
+  547  ls -l
+  548  cd temp
+  549  ls temp
+  550  ls -l temp
+  551  ls -l
+  552  mkdir temp2
+  553  ls -l temp2
+  554  touch a.txt temp2
+  555  ls temp2
+  556  cd temp2
+  557  ls
+  558  touch a.txt
+  559  ls
+  560  rm a.txt
+  561  ls
+  562  cd 
+  563  cd A1
+  564  ls
+  565  cd temp
+  566  mkdir temp3
+  567  ls
+  568  mv temp2 temp3
+  569  ls
+  570  cd temp3
+  571  ls
+  572  cd ..
+  573  cd temp3
+  574  mv temp2 A1
+  575  cd..
+  576  cd ..
+  577  ls
+  578  cd temp3
+  579  ls
+  580  mv A1 A1
+  581  rm A1
+  582  rm -rf A1
+  583  cd ..
+  584  ls
+  585  cd ..
+  586  ls
+  587  cd A1
+  588  mkdir temp2
+  589  ls
+  590  cp temp2 temp3
+  591  man cp
+  592  cp --copy-contents temp2 temp3
+  593  ls
+  594  cp -r temp2 temp3
+  595  ls
+  596  ls temp3
+  597  cd temp3
+  598  ls
+  599  rm -rf temp2
+  600  ls
+  601  cd..
+  602  cd ..
+  603  ls
+  604  cd temp2
+  605  touch s.txt
+  606  ls
+  607  cd ..
+  608  cp -R temp2 temp3
+  609  cd temp3
+  610  ls
+  611  ls temp2
+  612  rm -rf temp2
+  613  cd ..
+  614  ls
+  615  lscpu
+  616  free
+  617   free | head -2
+  618  free -m
+  619  free -g
+  620  lscpu
+  621  grep -c processor /proc/cpuinfo
+  622  grep processor /proc/cpuinfo
+  623  lscpu | grep -g max
+  624  lscpu | grep max
+  625  pwd
+  626  echo $HOME
+  627  id
+  628  groups
+  629  free -m|head -2
+  630  lscpu
+  631  lscpu -g
+  632  grep speed lscpu
+  633  grep speed cpuinfo
+  634  cat /proc/cpuinfo
+  635  cat /proc/cpuinfo | grep MHz
+  636  cat /proc/cpuinfo | grep GHz
+  637  cat /proc/cpuinfo | grep Clock
+  638  cat /proc/cpuinfo | grep clock
+  639  lscpu | grep MHz
+  640  lscpu | grep GHz
+  641  speed
+  642  lscpu | grep Model
+  643  cat /proc/cpuinfo
+  644  cat -g /proc/cpuinfo
+  645  cat /proc/cpuinfo | grep revision
+  646  cat /proc/cpuinfo | grep revision| head -1
+  647  ls
+  648  cd ..
+  649  ls
+  650  pwd
+  651  cd test
+  652  cd /home/test/A1/downloaded_hashtags_extend.csv
+  653  cd /home/test/A1
+  654  ls
+  655  cd
+  656  ls
+  657  cd A1
+  658  ls
+  659  cp /home/test/A1/downloaded_hashtags_extend.csv
+  660  cp /home/test/A1/downloaded_hashtags_extend.csv A1
+  661  ls
+  662  ls A1
+  663  cd A1
+  664  ls
+  665  head -A1
+  666  head -2 A1
+  667  head -5 A1
+  668  ls
+  669  ls A1
+  670  ls
+  671  cd ..
+  672  ls
+  673  cd A1
+  674  rm -rf /shota/A1/A1
+  675  ls
+  676  rm A1
+  677  ls
+  678  cd ..
+  679  ls
+  680  cp /home/test/A1/downloaded_hashtags_extend.csv shota
+  681  ls
+  682  cd shota
+  683  rm shota
+  684  ls
+  685  cd A1
+  686  cp /home/test/A1/downloaded_hashtags_extend.csv
+  687  cp /home/test/A1/downloaded_hashtags_extend.csv hashtag.csv
+  688  ls
+  689  ls -l
+  690  ls -l -g
+  691  ls -lah
+  692  ls -lh
+  693  ls -l --block-size=G
+  694  ls -l --block-size=M
+  695  wc hashtag.csv
+  696  wc -g hashtag.csv
+  697  lc -l hashtag.csv
+  698  wc -l hashtag.csv
+  699  grep great | wc -l
+  700  grep -i great hashtag.csv | wc -l
+  701  grep great hashtag.csv | wc -l
+  702  grep Great hashtag.csv | wc -l
+  703  grep -i Great hashtag.csv | wc -l
+  704  file hashtag.csv
+  705  man iconv
+  706  file hashtag.csv
+  707  iconv -f UTF-8 -t ascii hashtag.csv > hastag_ascii.csv
+  708  iconv -f UTF-8 -t  ascii//TRANSLIT hashtag.csv > hastag_ascii.csv
+  709  ls
+  710  head -2 hashtag_ascii.csv
+  711  file hastag_ascii.csv
+  712  head -1 hastag_ascii.csv
+  713  head -1 hashtag.csv
+  714  head -10 hashtag.csv
+  715  awk -F ',' '{print $2}’ hashtag.csv | sort | uniq -c
+  716  wc -l
+  717  awk -F ',' '{print $2}’ hashtag.csv | sort | uniq -c wc -l
+  718  awk -F ',' '{print $2}’ hashtag.csv | sort | uniq -c | wc -l
+  719  man awk
+  720  awk -F ',' '{print $2}’ hashtag.csv | sort | uniq -c | wc -l
+  721  '
+  722  awk -F ',' '{print $2}' hashtag.csv | sort | uniq -c | wc -l
+  723   >> awk -F ',' '{print $2}' hashtag.csv | sort | uniq -c | wc -l
+  724  awk -F ',' '{print $2}' hashtag.csv | sort | uniq -c | wc -l
+  725  awk -F ',' '{print $0}' hashtag.csv | sort | uniq -c | wc -l
+  726  awk -F ',' '{print $4}' hashtag.csv | sort | uniq -c | wc -l
+  727  awk -F ',' '{print $5}' hashtag.csv | sort | uniq -c | wc -l
+  728  awk -F ',' '{print $6}' hashtag.csv | sort | uniq -c | wc -l
+  729  sort -u File
+  730  sort -u hashtag.csv
+  731  awk -F ',' '{print $0}' hashtag.csv | sort | uniq -c | wc -l
+  732  awk -F ',' '{print $1}' hashtag.csv | sort | uniq -c | wc -l
+  733  awk -F ',' '{print $2}' hashtag.csv | sort | uniq -c | wc -l
+  734  awk -F ',' '{print $4}' hashtag.csv | sort | uniq -c | wc -l
+  735  tail -10 hashtag.csv
+  736  awk -F ',' '{print $4}' hashtag.csv | sort  | uniq | wc -l
+  737  awk -F ',' '{print $4}' hashtag.csv | sort -u | uniq -c | wc -l
+  738  awk -F ',' '{print $4}' hashtag.csv | sort -u | uniq -u | wc -l
+  739  awk -F ',' '{print $4}' hashtag.csv | wc -l
+  740  man uniq
+  741  awk -F ',' '{print $4}' hashtag.csv | uniq |wc -l
+  742  awk -F ',' '{print $4}' hashtag.csv | uniq  -c|wc -l
+  743  awk -F ',' '{print $4}' hashtag.csv | sort -u | wc -l
+  744  awk -F ',' '{print $4}' hashtag.csv | sort -u | uniq -u | wc -l
+  745  awk -F ',' '{print $4}' hashtag.csv | sort -u | uniq | wc -l
+  746  awk -F ',' '{print $4}' hashtag.csv | sort | uniq | wc -l
+  747  id -u shota
+  748  groups
+  749  cd temp
+  750  ls -l
+  751  grep -i 'great' hashtag.csv | wc l
+  752  grep -i great hashtag.csv | wc l
+  753  grep -i great hashtag.csv | wc -l
+  754  grep -i 'great' hashtag.csv | wc -l
+  755  grep great hashtag.csv | wc -l
+  756  grep great hashtag.csv |uniq | wc -l
+  757  man grep
+  758  awk -F ',' '{print $4}' hashtag.csv | uniq -c
+  759  head -5 hashtag.csv
+  760  grep great hashtag.csv |uniq | wc -l
+  761  awk -F ',' '{print $4}' hashtag.csv | uniq -c | wc -l
+  762  awk -F ',' '{print $4}' hashtag.csv | uniq | wc -l
+  763  awk -F ',' '{print $4}' hashtag.csv | sort -u | wc -l
+  764  awk -F ',' '{$4}' hashtag.csv | sort -u | wc -l
+  765  awk -F ',' {print $4} hashtag.csv | sort -u | wc -l
+  766  awk -F ',' '{print $4}' hashtag.csv | sort -u | wc -l
+  767  echo $HOME
+  768  id -u shota
+  769  groups
+  770  chmod 600 temp/
+  771  cd temp
+  772  touch ~/shota/A1/b.txt
+  773  ls
+  774  cd
+  775  cd A1
+  776  ls
+  777  vi a.txt
+  778  script a1.txt
+  779  vi a1.txt
+  780  ls -latr
+  781  cd temp
+  782  touch ~/A1/b
+  783  ls
+  784  touch ~/A1/temp/b2
+  785  cd ..
+  786  ls -latr A1
+  787  ls -latr A1/temp2
+  788  cd A1
+  789  ls -latr temp
+  790  ls -latr directory/proc
+  791  ls proc
+  792  lscpu
+  793  ls /proc/cpuinfo
+  794  ls -latr /proc
+  795  ls proc/sys
+  796  ls -latr /proc/sys
+  797  ls -latr /proc/ | grep cpu
+  798  ls -latr /proc/ | grep mem
+  799  head -2 /proc/meminfo
+  800  head -1 /proc/meminfo
+  801  cat /proc/cpuinfo | grep GHz
+  802  head -3 /proc/cpuinfo
+  803  cat /proc/cpuinfo
+  804  lscpu
+  805  what /proc shows
+  806  what /proc
+  807  cat /proc/cpuinfo | grep revision| head -1
+  808  cat /proc/cpuinfo | grep model| head -1
+  809  cat /proc/cpuinfo | grep architecture| head -1
+  810  cat /proc/cpuinfo | head -10
+  811  wc -l hashtag.csv
+  812  head -10 hashtag.csv
+  813  awk -F ',' '{print $1}' hashtag.csv | tail -n +2 | sort | uniq | wc -l
+  814  vi a1.txt
+  815  head -2 /proc/cpuinfo
+  816  head -5 /proc/cpuinfo
+  817  head -10 /proc/cpuinfo
+  818  tail -10 /proc/cpuinfo
+  819  ls
+  820  vi a1.txt
+  821  lscpu
+  822  vi a.txt
+  823  vi a1.txt
+  824  ls -l
+  825  ls -lah
+  826  ls -l --block-size=G
+  827  vi a1.txt
+  828  head -10 a1.txt
+  829  vi a1.tx
+  830  ls
+  831  rm a.txt
+  832  la
+  833  ls
+  834  vi a1.txt
+  835  git init
+  836  git add a1.txt
+  837  git status
+  838  git commit -m "a1.txt"
+  839  git remote add origin https://github.com/ShotaDT/A1.git
+  840  git push -u origin main
+  841  git push -u origin master
+  842  vi a1.txt
+  843  git add a1.txt
+  844  git commit -m "edit a1.txt"
+  845  git push -u origin master
+  846  cd ..
+  847  ls
+  848  head amazon_reviews_us_Books_v1_02.tsv
+  849  head -1 amazon_reviews_us_Books_v1_02.tsv
+  850  history >> chmds.log
+  851  ls
+  852  tail -5 cmds.log
+  853  tail -5 chds.log
+  854  tail -5 chmds.log
+  855  mv chmds.log A1
+  856  mv cmds.log A1
+  857  ls
+  858  head -5 README.md
+  859  rm README.md
+  860  ls
+  861  mv counts.txt ws2
+  862  ls
+  863  cd ws2
+  864  ls
+  865  cd ..
+  866  ls
+  867  head -1 amazon_reviews_us_Books_v1_02.tsv
+  868  head -2 amazon_reviews_us_Books_v1_02.tsv
+  869  exit
+  870  ls
+  871  mkdir ws3
+  872  ls
+  873  cp amazon_reviews_us_Books_v1_02.tsv /ws3
+  874  cp -R amazon_reviews_us_Books_v1_02.tsv
+  875  cp -R amazon_reviews_us_Books_v1_02.tsv /ws3/
+  876  cp -R amazon_reviews_us_Books_v1_02.tsv /ws3
+  877  ls -latr
+  878  ls -l
+  879  head -2 amazon_reviews_us_Books_v1_02.tsv
+  880  awk -F" " '{print $2}' amazon_reviews_us_Books_v1_02.tsv | sort| uniq -c| head -3
+  881  awk -F" " '{print $2}' amazon_reviews_us_Books_v1_02.tsv | sort| uniq -c| tail -3
+  882  awk -F" " '{print $2}' amazon_reviews_us_Books_v1_02.tsv | sort| uniq -c| tail -5
+  883  awk -F" " '{print $2}' amazon_reviews_us_Books_v1_02.tsv |  uniq -c| tail -5
+  884  awk -F" " '{print $2}' amazon_reviews_us_Books_v1_02.tsv |sort|  uniq -c| tail -5
+  885  awk -F" " '{print $2}' amazon_reviews_us_Books_v1_02.tsv |sort|  uniq -c| tail -20
+  886  awk -F" " '{print $2}' amazon_reviews_us_Books_v1_02.tsv |sort| uniq| tail -20
+  887  awk -F" " '{print $2}' amazon_reviews_us_Books_v1_02.tsv |sort | uniq -c|sort |  tail -20
+  888  awk -F" " '{print $2}' amazon_reviews_us_Books_v1_02.tsv |sort| uniq -c|sort | head -10
+  889  grep 50122160 | wc -l
+  890  grep 50122160 amazon_reviews_us_Books_v1_02.tsv |wc -l
+  891  awk -F" " '{print $4}' amazon_reviews_us_Books_v1_02.tsv |sort | uniq -c|sort |  tail -3
+  892  awk -F" " '{print $3}' amazon_reviews_us_Books_v1_02.tsv |sort | uniq -c|sort |  tail -3
+  893  ls
+  894  cd ws3
+  895  history > cmds.log
